@@ -1,0 +1,10 @@
+NAME
+  ICMSReader::vtkICMSReader
+LIBRARY_NAME
+  vtkICMSReader
+DEPENDS
+  VTK::CommonCore
+  VTK::CommonExecutionModel
+PRIVATE_DEPENDS
+  ParaView::Core
+  VTK::vtksys
