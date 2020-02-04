@@ -13,7 +13,8 @@ paraview_plugin_scan(
 	  ENABLE_BY_DEFAULT ON)
 paraview_plugin_build(
 	LIBRARY_DESTINATION "${CMAKE_INSTALL_BINDIR}"
-	        LIBRARY_SUBDIRECTORY "plugins"
-		PLUGINS_FILE_NAME ".plugins"
-		TARGET plugins
-	        PLUGINS ${plugins}) 
+	LIBRARY_SUBDIRECTORY "plugins"
+	PLUGINS_FILE_NAME ".plugins"
+	TARGET plugins
+	AUTOLOAD ${plugins}
+	PLUGINS ${plugins}) 
