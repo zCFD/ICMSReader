@@ -14,7 +14,7 @@ paraview_plugin_scan(
 paraview_plugin_build(
 	LIBRARY_DESTINATION "${CMAKE_INSTALL_BINDIR}"
 	LIBRARY_SUBDIRECTORY "plugins"
-	PLUGINS_FILE_NAME ".plugins"
+	PLUGINS_FILE_NAME "ICMSReader.plugin.xml"
 	TARGET plugins
 	AUTOLOAD ${plugins}
 	PLUGINS ${plugins}) 
